@@ -38,18 +38,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //App id : ca-app-pub-5023471144141976~2916936016
-
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
-
-        //Banner Ad id: ca-app-pub-5023471144141976/5094175662
-        //Interstitial Ad id: ca-app-pub-5023471144141976/6021719305
-        //Banner Test id: ca-app-pub-3940256099942544/6300978111
-        //Interstitial Test id: ca-app-pub-3940256099942544/1033173712
 
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
